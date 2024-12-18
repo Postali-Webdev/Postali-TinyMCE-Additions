@@ -5,6 +5,9 @@
 * Version: 1.0
 * Author: Postali
 * Author URI: https://www.postali.com
+* Version: 1.1
+* GitHub Theme URI: https://github.com/Postali-Webdev/TinyMCE-Additions
+* GitHub Branch: master
 */
 
     // fix stripping empty span tags //
