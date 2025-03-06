@@ -2,7 +2,7 @@
 /*
 * Plugin Name: Postali - TinyMCE Additions
 * Description: Adds additional functionality to the TinyMCE WYSIWYG editor
-* Version: 1.1
+* Version: 2.0
 * Author: Postali
 * Author URI: https://www.postali.com
 */
