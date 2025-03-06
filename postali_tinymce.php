@@ -3,6 +3,7 @@
 * Plugin Name: Postali - TinyMCE Additions
 * Description: Adds additional functionality to the TinyMCE WYSIWYG editor
 * Version: 2.0
+* GitHub Plugin URI: https://github.com/Postali-Webdev/Postali-TinyMCE-Additions
 * Author: Postali
 * Author URI: https://www.postali.com
 */
