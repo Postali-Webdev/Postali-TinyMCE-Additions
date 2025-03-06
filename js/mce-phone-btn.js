@@ -5,24 +5,16 @@
             tooltip: 'Add phone number body',
             icon: 'plus',
             //ajax call that retrieves phone number in functions file
-            onclick: function () {
-                jQuery.ajax({
-                    url: ajaxurl,
-                    type: 'POST',
-                    data: {
-                        action: 'get_phone_number',
-                        phone_number: '<?php echo $phone_number; ?>'
-                    },
-                        success: function (response) {
-                        phone = response;
-                    }
-                });  
-
+            onclick: function () { 
                 editor.windowManager.open( {
                     title: 'Phone Number Style',
                     width: 500,
                     height: 100,
                     body: [{
+                        type: 'textbox',
+                        name: 'phone',
+                        label: 'Phone Number',
+                    },{
                         type: 'listbox',
                         name: 'style',
                         label: 'Style',
@@ -33,7 +25,7 @@
                     }],
 
                     onsubmit: function( e ) {
-                        let $content = '<a href="' + phone + '" class="' + e.data.style +'">' + phone + '</a>'
+                        let $content = '<a href="tel:' + e.data.phone + '" class="' + e.data.style +'">' + e.data.phone + '</a>'
                         editor.insertContent( $content );
                     }
 

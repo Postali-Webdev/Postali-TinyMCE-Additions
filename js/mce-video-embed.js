@@ -17,7 +17,7 @@
                     }],
 
                     onsubmit: function( e ) {
-                        let $content = '<!-- video block --><div class="video-embed"><iframe class="responsive-video" width="560" height="315" src="https://www.youtube.com/embed/' + e.data.video_id + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><!-- end video block -->'
+                        let $content = '<!-- video block --><div class="video-embed">[video_start]' + e.data.video_id + '[video_end]</div><!-- end video block -->'
                         editor.insertContent( $content );
                     }
                 });
