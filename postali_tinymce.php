@@ -2,7 +2,7 @@
 /*
 * Plugin Name: Postali - TinyMCE Additions
 * Description: Adds additional functionality to the TinyMCE WYSIWYG editor
-* Version: 1.0
+* Version: 1.1
 * Author: Postali
 * Author URI: https://www.postali.com
 */
@@ -78,8 +78,8 @@
     wp_enqueue_style( 'tinymce-styles', '/wp-content/plugins/Postali-TinyMCE-Additions/css/tinymce.css'); // Enqueue child theme styles.css
 
     // CALL GITHUB PLUGIN UPDATER
-    require_once( 'BFIGitHubPluginUploader.php' );
+    require_once( 'TinyMCEPluginUpdater.php' );
     if ( is_admin() ) {
-        new BFIGitHubPluginUpdater( __FILE__, 'Postali-Webdev', "Postali_staging" );
+        new TinyMCEPluginUpdater( __FILE__, 'Postali-Webdev', "Postali-TinyMCE-Additions" );
     }
 ?>
